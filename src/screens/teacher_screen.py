@@ -7,7 +7,7 @@ from src.components.subject_card import subject_card
 from src.components.dialog_create_subject import create_subject_dialog
 from src.components.dialog_share_subject import share_subject_dialog
 from src.components.dialog_add_photo import add_photos_dialog
-from PIL import Image
+
 from src.pipeline.face_pipeline import predict_attendance
 import pandas as pd
 import numpy as np
@@ -126,7 +126,7 @@ def teacher_tab_take_attendance():
                 all_detected_ids= {}
 
                 for idx, img in enumerate(st.session_state.attendance_images):
-                    img_np = np.array(Image.open(img).convert('RGB'))
+                    img_np = np.array(img.convert('RGB'))
 
                     detected, _, _ = predict_attendance(img_np)
 
