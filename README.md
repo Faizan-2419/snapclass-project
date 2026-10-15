@@ -71,7 +71,7 @@ SnapClass takes attendance from a classroom photo or a short audio recording. Te
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/SnapClass.git
+git clone https://github.com/Faizan-2419/SnapClass.git
 cd SnapClass
 ```
 
